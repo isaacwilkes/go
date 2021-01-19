@@ -1,1 +1,1 @@
-# izuk
+Learning Go!
