@@ -23,9 +23,9 @@ func main() {
 	fmt.Println(result)
 
 	if result%2 == 0 {
-		fmt.Println("the sum of numebers in array is even:", result)
+		fmt.Println("the sum of numbers in array is even:", result)
 	} else {
-		fmt.Println("the sum of numebers in array is odd:", result)
+		fmt.Println("the sum of numbers in array is odd:", result)
 	}
 
 }
