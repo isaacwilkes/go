@@ -16,5 +16,9 @@ func main() {
 	x = x + 1
 	}
 	
+	for {
+	fmt.Println("infinite") 
+	break
+	}
 }
 
