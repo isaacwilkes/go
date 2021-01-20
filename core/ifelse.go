@@ -2,10 +2,13 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func main() {
-	a := [15]int{25, 33, 17, 28, 37, 26, 28, 36, 68, 50, 34, 46, 474, 84, 29}
+	a := []int{25, 33, 17, 28, 37, 26, 28, 36, 68, 50, 34, 46, 474, 84, 29}
+	fmt.Println(a)
+	sort.Ints(a)
 	fmt.Println(a)
 
 	for i := 0; i < len(a); i++ {
