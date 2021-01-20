@@ -16,16 +16,16 @@ func main() {
 		}
 	}
 
-	result := 0
+	sum := 0
 	for x := 0; x < len(a); x++ {
-		result += a[x]
+		sum += a[x]
 	}
-	fmt.Println(result)
+	fmt.Println(sum)
 
-	if result%2 == 0 {
-		fmt.Println("the sum of numbers in array is even:", result)
+	if sum%2 == 0 {
+		fmt.Println("the sum of numbers in array is even:", sum)
 	} else {
-		fmt.Println("the sum of numbers in array is odd:", result)
+		fmt.Println("the sum of numbers in array is odd:", sum)
 	}
 
 }
