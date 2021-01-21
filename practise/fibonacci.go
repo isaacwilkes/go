@@ -29,14 +29,14 @@ func main() {
 		start.Hour(),
 		start.Minute(),
 		start.Second(),
-		start.Nanosecond())
+		start.Nanosecond()/1000000)
 
 	now := time.Now()
 	g := fibonacci()
 	for i := 0; i < 51; i++ {
 		now := time.Now()
 
-		h, m, s, n := now.Hour(), now.Minute(), now.Second(), now.Nanosecond()
+		h, m, s, n := now.Hour(), now.Minute(), now.Second(), now.Nanosecond()/1000000
 		fmt.Println("fib:", g(), "iteration:", i, "time:", h, ":", m, ":", s, ":", n)
 	}
 
@@ -44,7 +44,7 @@ func main() {
 		now.Hour(),
 		now.Minute(),
 		now.Second(),
-		now.Nanosecond(),
+		now.Nanosecond()/1000000,
 	)
 
 	elapsed := time.Since(start)
