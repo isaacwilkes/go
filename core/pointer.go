@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+type s struct {
+	X, Y string
+}
+
 func main() {
 	a, b := 1, 2
 
@@ -18,5 +22,10 @@ func main() {
 	*d = *d * 4     // multiply b through pointer d
 	fmt.Println(*d) // print
 	fmt.Println(b)  //value of b is now 8
+
+	z := s{"hello", "world"}
+	p := &z       //points to z struct
+	p.Y = "earth" //change "world" to "earth"
+	fmt.Println(z, *p)
 
 }
