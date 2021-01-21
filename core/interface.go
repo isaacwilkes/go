@@ -10,8 +10,8 @@ type I interface {
 
 func main() {
 	var a I
-	b := MyInt(5)
-	a = b
+	a = MyInt(5)
+
 
 	fmt.Println(a.Add())
 }
