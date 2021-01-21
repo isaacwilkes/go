@@ -13,7 +13,7 @@ import (
 //	}
 //}
 
-func fibonacci() func() int {
+func fibonacci() func() int { //closure
 	a, b := 0, 1
 	return func() int {
 		result := a
