@@ -8,6 +8,15 @@ type s struct {
 	X, Y string
 }
 
+type Integer struct {
+	A, B int
+}
+
+func (v *Integer) Multiply(n int) { //method with pointer receiver
+	v.A = v.A * n
+	v.B = v.B * n
+}
+
 func main() {
 	a, b := 1, 2
 
@@ -27,5 +36,9 @@ func main() {
 	p := &z       //points to z struct
 	p.Y = "earth" //change "world" to "earth"
 	fmt.Println(z, *p)
+
+	v := Integer{5, 10}
+	v.Multiply(10)
+	fmt.Println(v)
 
 }
