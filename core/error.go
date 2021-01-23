@@ -24,7 +24,7 @@ func multiply(start, end int) (float64, int, error) {
 	}
 
 	total := 1
-	for i := start; i <= end; i++ {
+	for i := start; i <= end; i++ { // multiplies all numbers between set range (3 to 5)
 		total *= i
 	}
 
